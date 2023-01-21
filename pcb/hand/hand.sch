@@ -711,4 +711,8 @@ Wire Wire Line
 	9300 3150 9300 3650
 Text GLabel 9300 1900 1    50   Input ~ 0
 col6
+NoConn ~ 4900 5900
+NoConn ~ 3600 5900
+NoConn ~ 3600 6700
+NoConn ~ 4900 6700
 $EndSCHEMATC
