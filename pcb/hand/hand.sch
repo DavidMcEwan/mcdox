@@ -19,7 +19,7 @@ U 1 1 5FB03435
 P 2700 2150
 F 0 "c0r0" H 2700 2250 50  0000 C CNN
 F 1 "switchDiode" H 2700 2100 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 2700 2150 50  0001 C CNN
+F 2 "hand:reversibleMX_10u" H 2700 2150 50  0001 C CNN
 F 3 "" H 2700 2150 50  0001 C CNN
 	1    2700 2150
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5FB0C286
 P 2700 2650
 F 0 "c0r1" H 2700 2750 50  0000 C CNN
 F 1 "switchDiode" H 2700 2600 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 2700 2650 50  0001 C CNN
+F 2 "hand:reversibleMX_10u" H 2700 2650 50  0001 C CNN
 F 3 "" H 2700 2650 50  0001 C CNN
 	1    2700 2650
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 5FB0CF9E
 P 2700 3150
 F 0 "c0r2" H 2700 3250 50  0000 C CNN
 F 1 "switchDiode" H 2700 3100 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 2700 3150 50  0001 C CNN
+F 2 "hand:reversibleMX_10u" H 2700 3150 50  0001 C CNN
 F 3 "" H 2700 3150 50  0001 C CNN
 	1    2700 3150
 	1    0    0    -1  
@@ -261,7 +261,7 @@ U 1 1 5FB853E2
 P 8950 3650
 F 0 "c6r3" H 8950 3750 50  0000 C CNN
 F 1 "switchDiode" H 8950 3600 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 8950 3650 50  0001 C CNN
+F 2 "hand:reversibleMX_10u" H 8950 3650 50  0001 C CNN
 F 3 "" H 8950 3650 50  0001 C CNN
 	1    8950 3650
 	1    0    0    -1  
@@ -272,7 +272,7 @@ U 1 1 5FB8540C
 P 8950 3150
 F 0 "c6r2" H 8950 3250 50  0000 C CNN
 F 1 "switchDiode" H 8950 3100 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 8950 3150 50  0001 C CNN
+F 2 "hand:reversibleMX_10u" H 8950 3150 50  0001 C CNN
 F 3 "" H 8950 3150 50  0001 C CNN
 	1    8950 3150
 	1    0    0    -1  
@@ -610,7 +610,7 @@ U 1 1 5FB85418
 P 8950 2650
 F 0 "c6r1" H 8950 2750 50  0000 C CNN
 F 1 "switchDiode" H 8950 2600 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 8950 2650 50  0001 C CNN
+F 2 "hand:reversibleMX_10u" H 8950 2650 50  0001 C CNN
 F 3 "" H 8950 2650 50  0001 C CNN
 	1    8950 2650
 	1    0    0    -1  
