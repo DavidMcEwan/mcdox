@@ -256,25 +256,25 @@ F 3 "" H 7700 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L hand:switchDiode c3r4
+L hand:switchDiode c6r3
 U 1 1 5FB853E2
-P 5700 4400
-F 0 "c3r4" H 5700 4500 50  0000 C CNN
-F 1 "switchDiode" H 5700 4350 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 5700 4400 50  0001 C CNN
-F 3 "" H 5700 4400 50  0001 C CNN
-	1    5700 4400
+P 8950 3650
+F 0 "c6r3" H 8950 3750 50  0000 C CNN
+F 1 "switchDiode" H 8950 3600 50  0000 C CNN
+F 2 "hand:reversibleMX_15u" H 8950 3650 50  0001 C CNN
+F 3 "" H 8950 3650 50  0001 C CNN
+	1    8950 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L hand:switchDiode c4r4
+L hand:switchDiode c6r2
 U 1 1 5FB8540C
-P 6700 4400
-F 0 "c4r4" H 6700 4500 50  0000 C CNN
-F 1 "switchDiode" H 6700 4350 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 6700 4400 50  0001 C CNN
-F 3 "" H 6700 4400 50  0001 C CNN
-	1    6700 4400
+P 8950 3150
+F 0 "c6r2" H 8950 3250 50  0000 C CNN
+F 1 "switchDiode" H 8950 3100 50  0000 C CNN
+F 2 "hand:reversibleMX_15u" H 8950 3150 50  0001 C CNN
+F 3 "" H 8950 3150 50  0001 C CNN
+	1    8950 3150
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 2350 0    50   Input ~ 0
@@ -463,7 +463,7 @@ Wire Wire Line
 Text Notes 7800 7500 2    50   ~ 0
 mcdoxHand
 Text Notes 7000 7100 0    50   ~ 0
-Reversible board for switch/diode array.\nDrive 5 rows, read 6 columns.\nRequires 16 GPIO for pair of hand boards,  columns are common.
+Reversible board for switch/diode array.\nDrive 4 rows, read 7 columns.\nRequires 15(=7+2*4) GPIO for pair of hand boards.\n25 keys per hand, 50 keys total.
 $Comp
 L Connector_Generic:Conn_01x15 J2
 U 1 1 5FCE768B
@@ -481,8 +481,8 @@ Text GLabel 4900 5600 0    50   Input ~ 0
 row1
 Text GLabel 4900 5800 0    50   Input ~ 0
 row3
-Text GLabel 4900 5900 0    50   Input ~ 0
-row4
+Text GLabel 4900 6600 0    50   Input ~ 0
+col6
 Text GLabel 4900 5700 0    50   Input ~ 0
 row2
 Text GLabel 4900 6000 0    50   Input ~ 0
@@ -562,8 +562,8 @@ Text GLabel 3600 5600 0    50   Input ~ 0
 row1
 Text GLabel 3600 5800 0    50   Input ~ 0
 row3
-Text GLabel 3600 5900 0    50   Input ~ 0
-row4
+Text GLabel 3600 6600 0    50   Input ~ 0
+col6
 Text GLabel 3600 5700 0    50   Input ~ 0
 row2
 Text GLabel 3600 6000 0    50   Input ~ 0
@@ -605,30 +605,16 @@ F 3 "~" H 1850 6750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L hand:switchDiode c5r4
+L hand:switchDiode c6r1
 U 1 1 5FB85418
-P 7700 4400
-F 0 "c5r4" H 7700 4500 50  0000 C CNN
-F 1 "switchDiode" H 7700 4350 50  0000 C CNN
-F 2 "hand:reversibleMX_15u" H 7700 4400 50  0001 C CNN
-F 3 "" H 7700 4400 50  0001 C CNN
-	1    7700 4400
+P 8950 2650
+F 0 "c6r1" H 8950 2750 50  0000 C CNN
+F 1 "switchDiode" H 8950 2600 50  0000 C CNN
+F 2 "hand:reversibleMX_15u" H 8950 2650 50  0001 C CNN
+F 3 "" H 8950 2650 50  0001 C CNN
+	1    8950 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 4650 5350 4650
-Wire Wire Line
-	6350 4650 6350 4400
-Wire Wire Line
-	5350 4650 5350 4400
-Connection ~ 5350 4650
-Wire Wire Line
-	5350 4650 6350 4650
-Wire Wire Line
-	6350 4650 7350 4650
-Wire Wire Line
-	7350 4650 7350 4400
-Connection ~ 6350 4650
 $Comp
 L power:+3.3V #PWR0103
 U 1 1 5FD1551B
@@ -701,14 +687,28 @@ Wire Wire Line
 	2250 3850 3350 3850
 Connection ~ 3350 3850
 Wire Wire Line
-	6050 3650 6050 4400
-Connection ~ 6050 3650
+	6350 3850 8600 3850
 Wire Wire Line
-	7050 4400 7050 3650
-Connection ~ 7050 3650
+	8600 3850 8600 3650
+Connection ~ 6350 3850
 Wire Wire Line
-	8050 3150 8050 4400
-Connection ~ 8050 3150
-Text GLabel 4350 4650 0    50   Input ~ 0
-row4
+	7350 3350 8600 3350
+Wire Wire Line
+	8600 3350 8600 3150
+Connection ~ 7350 3350
+Wire Wire Line
+	7350 2850 8600 2850
+Wire Wire Line
+	8600 2850 8600 2650
+Connection ~ 7350 2850
+Wire Wire Line
+	9300 1900 9300 2650
+Connection ~ 9300 2650
+Wire Wire Line
+	9300 2650 9300 3150
+Connection ~ 9300 3150
+Wire Wire Line
+	9300 3150 9300 3650
+Text GLabel 9300 1900 1    50   Input ~ 0
+col6
 $EndSCHEMATC
