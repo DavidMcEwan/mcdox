@@ -256,25 +256,14 @@ F 3 "" H 7700 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L hand:switchDiode c6r3
+L hand:switchDiode c5r3
 U 1 1 5FB853E2
-P 8950 3650
-F 0 "c6r3" H 8950 3750 50  0000 C CNN
-F 1 "switchDiode" H 8950 3600 50  0000 C CNN
-F 2 "hand:reversibleMX_10u" H 8950 3650 50  0001 C CNN
-F 3 "" H 8950 3650 50  0001 C CNN
-	1    8950 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L hand:switchDiode c6r2
-U 1 1 5FB8540C
-P 8950 3150
-F 0 "c6r2" H 8950 3250 50  0000 C CNN
-F 1 "switchDiode" H 8950 3100 50  0000 C CNN
-F 2 "hand:reversibleMX_10u" H 8950 3150 50  0001 C CNN
-F 3 "" H 8950 3150 50  0001 C CNN
-	1    8950 3150
+P 7700 3650
+F 0 "c5r3" H 7700 3750 50  0000 C CNN
+F 1 "switchDiode" H 7700 3600 50  0000 C CNN
+F 2 "hand:reversibleMX_10u" H 7700 3650 50  0001 C CNN
+F 3 "" H 7700 3650 50  0001 C CNN
+	1    7700 3650
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 2350 0    50   Input ~ 0
@@ -605,14 +594,14 @@ F 3 "~" H 1850 6750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L hand:switchDiode c6r1
+L hand:switchDiode c6r2
 U 1 1 5FB85418
-P 8950 2650
-F 0 "c6r1" H 8950 2750 50  0000 C CNN
-F 1 "switchDiode" H 8950 2600 50  0000 C CNN
-F 2 "hand:reversibleMX_10u" H 8950 2650 50  0001 C CNN
-F 3 "" H 8950 2650 50  0001 C CNN
-	1    8950 2650
+P 8700 3400
+F 0 "c6r2" H 8700 3500 50  0000 C CNN
+F 1 "switchDiode" H 8700 3350 50  0000 C CNN
+F 2 "hand:reversibleMX_10u" H 8700 3400 50  0001 C CNN
+F 3 "" H 8700 3400 50  0001 C CNN
+	1    8700 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -686,33 +675,47 @@ J1 on F.Cu connects right hand.\nJ2 on B.Cu connects left hand.
 Wire Wire Line
 	2250 3850 3350 3850
 Connection ~ 3350 3850
-Wire Wire Line
-	6350 3850 8600 3850
-Wire Wire Line
-	8600 3850 8600 3650
-Connection ~ 6350 3850
-Wire Wire Line
-	7350 3350 8600 3350
-Wire Wire Line
-	8600 3350 8600 3150
-Connection ~ 7350 3350
-Wire Wire Line
-	7350 2850 8600 2850
-Wire Wire Line
-	8600 2850 8600 2650
-Connection ~ 7350 2850
-Wire Wire Line
-	9300 1900 9300 2650
-Connection ~ 9300 2650
-Wire Wire Line
-	9300 2650 9300 3150
-Connection ~ 9300 3150
-Wire Wire Line
-	9300 3150 9300 3650
-Text GLabel 9300 1900 1    50   Input ~ 0
+Text GLabel 9050 1900 1    50   Input ~ 0
 col6
 NoConn ~ 4900 5900
 NoConn ~ 3600 5900
 NoConn ~ 3600 6700
 NoConn ~ 4900 6700
+Wire Wire Line
+	6350 3850 7350 3850
+Wire Wire Line
+	7350 3850 7350 3650
+Connection ~ 6350 3850
+$Comp
+L hand:switchDiode c6r3
+U 1 1 5FB8540C
+P 8700 3900
+F 0 "c6r3" H 8700 4000 50  0000 C CNN
+F 1 "switchDiode" H 8700 3850 50  0000 C CNN
+F 2 "hand:reversibleMX_10u" H 8700 3900 50  0001 C CNN
+F 3 "" H 8700 3900 50  0001 C CNN
+	1    8700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3850 7350 3900
+Wire Wire Line
+	7350 3900 8350 3900
+Connection ~ 7350 3850
+Wire Wire Line
+	7350 3350 7350 3400
+Wire Wire Line
+	7350 3400 8350 3400
+Connection ~ 7350 3350
+Wire Wire Line
+	9050 3900 9050 3400
+Connection ~ 9050 3400
+Wire Wire Line
+	9050 3400 9050 1900
+Wire Wire Line
+	8000 3650 8050 3650
+Wire Wire Line
+	8050 3650 8050 3150
+Connection ~ 8050 3150
+Connection ~ 8050 3650
 $EndSCHEMATC
