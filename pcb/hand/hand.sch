@@ -677,10 +677,6 @@ Wire Wire Line
 Connection ~ 3350 3850
 Text GLabel 9050 1900 1    50   Input ~ 0
 col6
-NoConn ~ 4900 5900
-NoConn ~ 3600 5900
-NoConn ~ 3600 6700
-NoConn ~ 4900 6700
 Wire Wire Line
 	6350 3850 7350 3850
 Wire Wire Line
@@ -718,4 +714,12 @@ Wire Wire Line
 	8050 3650 8050 3150
 Connection ~ 8050 3150
 Connection ~ 8050 3650
+Text GLabel 4900 5900 0    50   Input ~ 0
+row4_NC
+Text GLabel 3600 5900 0    50   Input ~ 0
+row4_NC
+Text GLabel 4900 6700 0    50   Input ~ 0
+col7_NC
+Text GLabel 3600 6700 0    50   Input ~ 0
+col7_NC
 $EndSCHEMATC
