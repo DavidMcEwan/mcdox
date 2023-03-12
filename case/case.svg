@@ -43,13 +43,13 @@
      inkscape:window-height="1025"
      id="namedview2182"
      showgrid="true"
-     inkscape:zoom="0.91479687"
-     inkscape:cx="755.90551"
-     inkscape:cy="377.95276"
-     inkscape:window-x="67"
+     inkscape:zoom="1.1994259"
+     inkscape:cx="655.85766"
+     inkscape:cy="382.08823"
+     inkscape:window-x="1987"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2180"
+     inkscape:current-layer="layer10"
      units="mm"
      width="400mm"
      inkscape:document-units="mm"
@@ -1163,8 +1163,7 @@
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="notes"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <text
        xml:space="preserve"
        style="font-size:1666.67px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:104.167"
@@ -1260,7 +1259,7 @@
          id="tspan1286"
          x="103572.9"
          y="71389.414"
-         style="stroke-width:104.167">11x ISO4762(socket-head)M3 20mm</tspan></text>
+         style="stroke-width:104.167">9x ISO4762(socket-head)M3 20mm</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
